@@ -1,0 +1,10 @@
+# Upload a piecewise polynomial trajectory to the Crazyflie's trajectory memory
+# and define it under trajectory_id. The firmware memory holds at most 31 pieces.
+uint8 trajectory_id
+# Index of the first piece in the Crazyflie's memory. Only 0 is supported: the
+# whole trajectory is rewritten on every upload.
+uint32 piece_offset
+crazybridge_interfaces/TrajectoryPolynomialPiece[] pieces
+---
+bool success
+string message

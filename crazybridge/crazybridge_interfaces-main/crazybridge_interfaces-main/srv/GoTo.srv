@@ -1,0 +1,8 @@
+uint8 group_mask
+bool relative
+geometry_msgs/Point goal
+float32 yaw
+builtin_interfaces/Duration duration
+---
+bool success
+string message

@@ -1,0 +1,11 @@
+# Start a trajectory previously uploaded with UploadTrajectory.
+uint8 group_mask
+uint8 trajectory_id
+# Time scale: 1.0 = as designed, > 1.0 slower, < 1.0 faster.
+float32 timescale
+bool reversed
+# Shift the trajectory so that it starts at the current setpoint.
+bool relative
+---
+bool success
+string message

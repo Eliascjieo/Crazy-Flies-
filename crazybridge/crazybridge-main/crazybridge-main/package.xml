@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>crazybridge</name>
+  <version>0.1.0</version>
+  <description>
+    Python ROS2 port of the forerunner2 crazybridge module. Bridges a single
+    Crazyflie (real or CrazySim SITL) over cflib's UDP driver, exposing
+    odometry and forwarding external position fixes from a motion-capture
+    topic, plus takeoff/land/go_to services backed by the high-level
+    commander.
+  </description>
+  <maintainer email="kevin@nuclea.solutions">Kevin Martinez</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>crazybridge_interfaces</depend>
+
+  <exec_depend>python3-cflib</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
